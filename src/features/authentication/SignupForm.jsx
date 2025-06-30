@@ -3,7 +3,7 @@ import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
-import { useSignUp } from "./useSignup";
+import { useSignUp } from "./useSignUp";
 import SpinnerMini from "../../ui/SpinnerMini";
 
 // Email regex: /\S+@\S+\.\S+/
@@ -17,7 +17,7 @@ function SignupForm() {
     signup(
       { fullName, email, password },
       {
-        onSettled: () => reset(),
+        onSettled: () => reset,
       }
     );
   }
